@@ -67,26 +67,4 @@ public class EmployeeReader {
 
 
 
-
-
-
-
-
-//
-//        //create employee array
-//        ArrayList<Employee> myEmployees = new ArrayList<>();
-//
-//        //add framework to add new strings to array
-//        Employee oneEmployee;
-//        Employee twoEmployee;
-//
-//        //attach readers to variable
-//
-//        //
-
-
-
-
-
-
 }
