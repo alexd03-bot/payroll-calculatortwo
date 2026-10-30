@@ -12,7 +12,7 @@ public class EmployeeReader {
 
         String fileName = "src/main/resources/employees.csv";
 
-        ;
+
         try {
             FileReader fileReader = new FileReader(fileName);
             BufferedReader buffRead = new BufferedReader(fileReader);
@@ -28,15 +28,17 @@ public class EmployeeReader {
                 line = buffRead.readLine();
             }
             buffRead.close();
-
+//try close v
         } catch (FileNotFoundException e) {
             System.out.println("doesn't exist");
         } catch (IOException e) {
             System.out.println("placeholder");
         }
-    }
 
-    private static Employee parseEmployee(String employeeCsv) {
+
+    }//psvm close
+
+    public static Employee parseEmployee(String employeeCsv) {
         String[] lineParts = employeeCsv.split(Pattern.quote("|"));
         int id = Integer.parseInt(lineParts[0]);
         String name = lineParts[1];
@@ -46,7 +48,7 @@ public class EmployeeReader {
         Employee employee = new Employee(id, name, hoursWorked, payRate);
 
         return employee;
-    }
+    }//parseemp close
 
 
 
@@ -67,4 +69,4 @@ public class EmployeeReader {
 
 
 
-}
+}//class end
